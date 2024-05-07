@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dena Maria George</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, rgba(41, 30, 113, 0.046),rgb(188, 15, 252), rgb(13, 71, 129), rgb(113, 185, 183));
+}
+
+
+        .topnav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #18032e;
+            z-index: 1000;
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 14px 16px;
+            transition: background-color 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: #34d6ef;
+            color: #fff;
+        }
+
+        .topnav a.active {
+            background-color: #7726c8;
+        }
+
+        #grad1 {
+            min-height: 200vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 90px;
+        }
+
+        .section {
+            text-align: center;
+           
+            max-width: 80%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        } 
+        #about p{
+            color: #f1f1f1;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        #home.section:hover h1,
+#home.section:hover h2 {
+    color: #fefefe; 
+}
+
+        .section h1 {
+            font-size: 2em;
+            color: #333333;
+            font-family: 'Arial', sans-serif; 
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 3em;
+            color: #333333;
+            font-family: 'Georgia', serif; 
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #666666;
+            line-height: 1.6;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(17, 26, 16);
+            color: white;
+            padding-top: 10px;
+            z-index: 1000;
+        }
+
+        .socialIcons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .fa {
+            flex: 1;
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            transition: opacity 0.3s;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+       
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+      
+        .fa-instagram:hover {
+            background: #6c0733; 
+        }
+
+        .fa-linkedin:hover {
+            background: #0056b3; 
+        }
+
+        .fa-github:hover {
+            background: #ffffff; 
+        }
+
+        @media (max-width: 768px) {
+            .topnav {
+                flex-direction: column;
+                height: auto;
+            }
+            .topnav a {
+                padding: 10px;
+            }
+        }
+        #home.section {
+    text-align: center;
+    padding: 150px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.564);
+    background-color: rgba(57, 45, 106, 0.331);
+    max-width: 80%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.project-item {
+    flex: 1;
+    max-width: 300px; 
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%; 
+    height: auto; 
+}
+#contact p {
+    color: #ffffff; 
+}
+.project-description {
+    text-align: left;
+    margin-top: 10px;
+    color: #ffffff; 
+}
+
+.project-description h3 {
+    font-size: 1.5em;
+    color: #ffffff; 
+}
+
+.project-description p {
+    font-size: 1em;
+    color: #ffffff; 
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.project-description a {
+    display: block;
+    text-decoration: none;
+    color: #34d6ef;
+    transition: color 0.3s;
+}
+
+.project-description a:hover {
+    color: #7726c8;
+}
+
+#contact li a {
+            color: #030303; 
+            text-decoration: none; 
+            transition: text-decoration 0.3s; 
+        }
+
+        #contact li a:hover {
+            text-decoration: underline; 
+        }
+        #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(182, 102, 252);
+    color: rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+
+.connect-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-instagram:hover {
+    background: #6c0733;
+}
+
+.fa-linkedin:hover {
+    background: #0056b3;
+}
+
+.fa-github:hover {
+    background: #111111;
+}
+ 
+ .hobbies-container {
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap; 
+            max-width: 800px; 
+            margin: 0 auto;
+            padding: 20px; 
+            box-sizing: border-box; 
+        }
+
+   
+        .hobby-item {
+            flex: 0 0 22%;
+            margin-bottom: 20px; 
+            text-align: center;
+        }
+
+       
+        .hobby-item img {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+        }
+
+        
+        h1 {
+            text-align: center; 
+            margin-top: 40px; 
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <div id="grad1">
+        <section id="home" class="section">
+            <h1>Hello, my name is</h1>
+            <h2>DENA MARIA GEORGE</h2>
+        </section>
+
+        <section id="about" class="section">
+            <h1>Know More About Me</h1>
+            <p>My journey in technology has been driven by a passion for continuous learning and to make a positive impact on the world.
+                I also have a strong creative side, with interests in reading, painting, photography, writing and drawing.</p>
+        </section>
+
+        <section id="projects" class="section">
+            <h1>Here are some of my projects</h1>
+            <div class="project-container">
+                <div class="project-item">
+                    <img src="assets\images\metaverse.png" alt="Spatial">
+                    <div class="project-description">
+                        <h3>Grammar Island</h3>
+                        <p>A metaverse where Deaf and Hard of Hearing students can learn the english grammer through gaming. Click the link below to play!</p>
+                        <a href="https://www.spatial.io/s/GRAMMAR-ISLAND-62e4b5beb1c8360001cb6803?share=7087374110194433494&utm_source=%2Fspaces" target="_blank">Click here to play in Spatial</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets\images\analyzer.png" alt="Unity">
+                    <div class="project-description">
+                        <h3>Panoramic Radiograph Analyzer</h3>
+                        <p>This is used to predict the age and gender from panoramic radiographs of the human mandible useful in dental forensics. </p>
+                        <a href="https://panoramicanalyzer.streamlit.app/" target="_blank">Click here to view the page</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets\images\unity.png" alt="Analyzer">
+                    <div class="project-description">
+                        <h3></h3>
+                        <p>A simple game where students can check their english grammer skills.This project is build using unity. Click the link below to play.</p>
+                        <a href="https://play.unity.com/mg/other/game1-pk4" target="_blank">Click here to play</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1>Here are some of my hobbies</h1> 
+    <div class="hobbies-container">
+       
+        <div class="hobby-item">
+            <img src="assets\images\digital.jpg" alt="Hobby 1">
+        </div>
+       
+        <div class="hobby-item">
+            <img src="assets\images\sunset.jpg" alt="Hobby 3">
+        </div>
+       
+        <div class="hobby-item">
+            <img src="assets\images\sun.jpg" alt="Hobby 4">
+        </div>
+    </div>
+        
+
+        <section id="contact" class="section">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me:</p>
+            <ul>
+                <li>Email: <a href="mailto:denamariageorge@gmail.com">denamariageorge@gmail.com</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div id="footer">
+        <div class="footer-content">
+            <div class="connect-text">
+                <p>Connect with me</p>
+            </div>
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/_denamg_?igsh=Y2ZpYjZ6enFydzB0" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/denamgeorge" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://github.com/denamaria" target="_blank" class="fa fa-github"></a>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+</body>
+</html>
